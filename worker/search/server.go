@@ -23,6 +23,7 @@ var (
 func searchHandler(w http.ResponseWriter, r * http.Request) {
 	fmt.Println(r.ParseForm())
 	fmt.Println(r.URL.Query())
+	fmt.Println(r.URL)
 	w.Write([]byte("search"))
 }
 
@@ -50,7 +51,6 @@ func InitHttpServer(port string) {
 	http.HandleFunc("/search/", searchHandler)
 	http.HandleFunc("/", defaultHandler)
 
-	fmt.Println(port)
 	err := http.ListenAndServe(":"+port, nil)
 	if err != nil {
 		log.Fatalf("failed to listen: %v", err)
