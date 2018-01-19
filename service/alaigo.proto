@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+// go use cc_generic_services option
+option cc_generic_services = true;
+option java_generic_services = true;
+option py_generic_services = true;
+
+package service;
+
+service SearchService {
+    rpc search (SearchRequest) returns (SearchResponse) {}
+}
+
+message User {
+    string telephone_number = 1;
+    string user_name = 2;
+    string user_password = 3;
+}
+
+message SearchRequest {
+    string request_id = 1;
+    User user = 2;
+}
+
+message SearchResponse {
+    string request_id = 1;
+    string content = 2;
+}
