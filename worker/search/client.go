@@ -3,7 +3,7 @@ package search
 import (
 	"google.golang.org/grpc"
 	"github.com/prometheus/common/log"
-	"./proto"
+	"github.com/alex19861108/alaigo/worker/search/proto"
 	"context"
 	"fmt"
 )

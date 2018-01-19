@@ -5,7 +5,7 @@ import (
 	"gopkg.in/yaml.v2"
 	"flag"
 
-	"../../config"
+	"github.com/alex19861108/alaigo/config"
 )
 
 var (

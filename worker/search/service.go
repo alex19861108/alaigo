@@ -7,7 +7,7 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
 	"fmt"
-	"./proto"
+	"github.com/alex19861108/alaigo/worker/search/proto"
 )
 
 type server struct {
