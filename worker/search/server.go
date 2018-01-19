@@ -66,6 +66,6 @@ func init() {
 	cfg := config.Config{}
 	yaml.Unmarshal(content, &cfg)
 
-	InitRpcServer(cfg.Service.RpcPort)
+	//InitRpcServer(cfg.Service.RpcPort)
 	InitHttpServer(cfg.Service.HttpPort)
 }
