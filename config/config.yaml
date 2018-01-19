@@ -1,3 +1,4 @@
 service:
   name: alaigo
-  port: 8080
+  rpc_port: 8080
+  http_port: 8081
