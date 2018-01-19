@@ -1,4 +1,4 @@
-package server
+package search
 
 import (
 	"io/ioutil"
@@ -6,7 +6,6 @@ import (
 	"flag"
 
 	"github.com/alex19861108/alaigo/config"
-	"github.com/alex19861108/alaigo/worker/search"
 )
 
 var (
@@ -19,5 +18,5 @@ func init() {
 	cfg := config.Config{}
 	yaml.Unmarshal(content, &cfg)
 
-	search.InitRpcServer(cfg.Service.Port)
+	InitRpcServer(cfg.Service.Port)
 }

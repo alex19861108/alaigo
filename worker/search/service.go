@@ -23,7 +23,7 @@ func (s *server) Search(ctx context.Context, req *proto.SearchRequest) (*proto.S
 }
 
 func InitRpcServer(port string) {
-	listener, err := net.Listen("tcp", ":8080")
+	listener, err := net.Listen("tcp", ":"+port)
 	if err != nil {
 		log.Fatalf("failed to listen: %v", err)
 	}

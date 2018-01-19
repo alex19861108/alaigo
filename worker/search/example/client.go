@@ -1,4 +1,4 @@
-package client
+package example
 
 import (
 	"google.golang.org/grpc"
