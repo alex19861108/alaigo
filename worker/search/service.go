@@ -1,4 +1,4 @@
-package service
+package search
 
 import (
 	"golang.org/x/net/context"
@@ -6,27 +6,30 @@ import (
 	"log"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
+	"fmt"
+	"./proto"
 )
 
-type SearchServer struct {
+type server struct {
 
 }
 
-func (s *SearchServer) Search(ctx context.Context, req *SearchRequest) (*SearchResponse, error) {
+func (s *server) Search(ctx context.Context, req *proto.SearchRequest) (*proto.SearchResponse, error) {
 	request_id := req.RequestId
-	return &SearchResponse{
+	fmt.Printf("receive: %s\n", request_id)
+	return &proto.SearchResponse{
 		RequestId: request_id,
 	}, nil
 }
 
-func InitRpcServer(cfg config.Config) {
-	listener, err := net.Listen("tcp", port)
+func InitRpcServer(port string) {
+	listener, err := net.Listen("tcp", ":8080")
 	if err != nil {
 		log.Fatalf("failed to listen: %v", err)
 	}
 
 	s := grpc.NewServer()
-	RegisterSearchServiceServer(s, &SearchServer{})
+	proto.RegisterSearchServiceServer(s, &server{})
 	// Register reflection service on gRPC server.
 	reflection.Register(s)
 	if err := s.Serve(listener); err != nil {

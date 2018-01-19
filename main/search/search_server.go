@@ -1,12 +1,12 @@
-package main
+package search
 
 import (
 	"io/ioutil"
 	"gopkg.in/yaml.v2"
 	"flag"
 
-	"./config"
-	"./service"
+	"../../config"
+	"../../worker/search"
 )
 
 
@@ -24,5 +24,5 @@ func main() {
 	cfg := config.Config{}
 	yaml.Unmarshal(content, &cfg)
 
-	service.InitRpcServer(cfg)
+	search.InitRpcServer(cfg.Service.Port)
 }
