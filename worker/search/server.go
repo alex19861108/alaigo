@@ -12,6 +12,7 @@ import (
 	"log"
 	"google.golang.org/grpc"
 	"github.com/alex19861108/alaigo/worker/search/proto"
+	"fmt"
 )
 
 var (
@@ -51,6 +52,7 @@ func InitHttpServer(port string) {
 	http.HandleFunc("/search", searchHandler)
 	http.HandleFunc("/", defaultHandler)
 
+	fmt.Println(port)
 	err := http.ListenAndServe(":"+port, nil)
 	if err != nil {
 		log.Fatalf("failed to listen: %v", err)
