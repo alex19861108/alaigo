@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c78fece3-1b20-4204-8eb6-fdbd773f08ff" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/build/search/main/search_client.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/build/search/main/search_server.go" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/main/search/search_client.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/main/search/search_server.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker/search/client.go" afterPath="$PROJECT_DIR$/worker/search/client.go" />
-      <change beforePath="$PROJECT_DIR$/worker/search/server.go" afterPath="$PROJECT_DIR$/worker/search/server.go" />
-      <change beforePath="$PROJECT_DIR$/worker/search/service.go" afterPath="$PROJECT_DIR$/worker/search/service.go" />
+      <change beforePath="$PROJECT_DIR$/build/search/main/search_client.go" afterPath="$PROJECT_DIR$/build/search/main/search_client.go" />
+      <change beforePath="$PROJECT_DIR$/build/search/main/search_server.go" afterPath="$PROJECT_DIR$/build/search/main/search_server.go" />
+      <change beforePath="$PROJECT_DIR$/worker/search/client.go" afterPath="$PROJECT_DIR$/worker/search/client/client.go" />
+      <change beforePath="$PROJECT_DIR$/worker/search/server.go" afterPath="$PROJECT_DIR$/worker/search/server/server.go" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,23 +17,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="search_server.go" pinned="false" current-in-tab="true">
+      <file leaf-file-name="search_server.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build/search/main/search_server.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding>
-                <element signature="e#14#74#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="45">
+              <caret line="3" column="58" lean-forward="false" selection-start-line="3" selection-start-column="58" selection-end-line="3" selection-end-column="58" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="server.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/worker/search/server.go">
+        <entry file="file://$PROJECT_DIR$/worker/search/server/server.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="42" />
+            <state relative-caret-position="60">
+              <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -52,24 +47,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search_client.go" pinned="false" current-in-tab="false">
+      <file leaf-file-name="search_client.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build/search/main/search_client.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-              <folding>
-                <element signature="e#14#80#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="45">
+              <caret line="3" column="58" lean-forward="false" selection-start-line="3" selection-start-column="58" selection-end-line="3" selection-end-column="58" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="client.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/worker/search/client.go">
+        <entry file="file://$PROJECT_DIR$/worker/search/client/client.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="38" lean-forward="true" selection-start-line="4" selection-start-column="38" selection-end-line="5" selection-end-column="56" />
-              <folding />
+            <state relative-caret-position="240">
+              <caret line="16" column="40" lean-forward="true" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+              <folding>
+                <element signature="e#16#160#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -88,7 +83,7 @@
         <entry file="file://$PROJECT_DIR$/worker/search/proto/alaigo.proto">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
-              <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+              <caret line="20" column="26" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -170,12 +165,13 @@
         <option value="$PROJECT_DIR$/main/search_client.go" />
         <option value="$PROJECT_DIR$/main/search_server.go" />
         <option value="$PROJECT_DIR$/worker/search/proto/client.go" />
-        <option value="$PROJECT_DIR$/worker/search/client.go" />
         <option value="$PROJECT_DIR$/worker/search/server.go" />
         <option value="$PROJECT_DIR$/worker/search/service.go" />
         <option value="$PROJECT_DIR$/main/search/search_server.go" />
-        <option value="$PROJECT_DIR$/build/search/main/search_client.go" />
+        <option value="$PROJECT_DIR$/worker/search/client.go" />
+        <option value="$PROJECT_DIR$/worker/search/client/client.go" />
         <option value="$PROJECT_DIR$/build/search/main/search_server.go" />
+        <option value="$PROJECT_DIR$/build/search/main/search_client.go" />
       </list>
     </option>
   </component>
@@ -250,18 +246,14 @@
             </path>
             <path>
               <item name="alaigo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="alaigo" type="462c0819:PsiDirectoryNode" />
+              <item name="worker" type="462c0819:PsiDirectoryNode" />
+              <item name="search" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="alaigo" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="GOPATH &lt;alaigo&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
-            </path>
-            <path>
-              <item name="alaigo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="GOPATH &lt;alaigo&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -274,14 +266,19 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$USER_HOME$" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="GO_FMT" value="false" />
+    <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/worker/search/client" />
+      <recent name="$PROJECT_DIR$/worker/search/server" />
       <recent name="$PROJECT_DIR$/build/search/main" />
       <recent name="$PROJECT_DIR$/main/search" />
       <recent name="$PROJECT_DIR$/worker/search" />
-      <recent name="$PROJECT_DIR$/worker" />
-      <recent name="$PROJECT_DIR$/server" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -295,6 +292,23 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="alaigo" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/" />
+      <directory value="$PROJECT_DIR$/" />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="alaigo" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <framework value="gotest" />
+      <kind value="DIRECTORY" />
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -326,6 +340,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="change dir" />
+    <option name="LAST_COMMIT_MESSAGE" value="change dir" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -383,7 +401,7 @@
     <entry file="file://$PROJECT_DIR$/worker/search/proto/alaigo.proto">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+          <caret line="20" column="26" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -406,39 +424,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/worker/search/server.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/worker/search/client.go">
+    <entry file="file://$PROJECT_DIR$/worker/search/server/server.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="38" lean-forward="true" selection-start-line="4" selection-start-column="38" selection-end-line="5" selection-end-column="56" />
+          <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/search/main/search_client.go">
+    <entry file="file://$PROJECT_DIR$/worker/search/client/client.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        <state relative-caret-position="240">
+          <caret line="16" column="40" lean-forward="true" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
           <folding>
-            <element signature="e#14#80#0" expanded="true" />
+            <element signature="e#16#160#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build/search/main/search_server.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="e#14#74#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="45">
+          <caret line="3" column="58" lean-forward="false" selection-start-line="3" selection-start-column="58" selection-end-line="3" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/search/main/search_client.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="58" lean-forward="false" selection-start-line="3" selection-start-column="58" selection-end-line="3" selection-end-column="58" />
+          <folding />
         </state>
       </provider>
     </entry>
