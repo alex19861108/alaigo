@@ -21,11 +21,9 @@ var (
 )
 
 func searchHandler(w http.ResponseWriter, r * http.Request) {
-	keys, ok := r.URL.Query()["key"]
-	if !ok || len(keys) < 1 {
-		w.Write([]byte("keys error"))
-		return
-	}
+	fmt.Println(r.ParseForm())
+	fmt.Println(r.URL.Query())
+	w.Write([]byte("search"))
 }
 
 
@@ -49,7 +47,7 @@ func InitRpcServer(port string) {
 }
 
 func InitHttpServer(port string) {
-	http.HandleFunc("/search", searchHandler)
+	http.HandleFunc("/search/", searchHandler)
 	http.HandleFunc("/", defaultHandler)
 
 	fmt.Println(port)
